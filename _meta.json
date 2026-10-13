@@ -1,0 +1,33 @@
+{
+  "name": "api-batch-tester",
+  "version": "4.0.0",
+  "scene": "API 接口批量测试",
+  "category": "开发提效",
+  "subtitle": "手动测 API 太慢？给一份 spec，自动跑完全部接口并告诉你哪几个有问题",
+  "target_user": "后端开发、测试工程师、API 设计师、DevOps",
+  "core_need": "自动化 API 回归测试与上线前接口体检",
+  "trigger_words": [
+    "API测试",
+    "接口测试",
+    "批量测试",
+    "接口回归",
+    "接口体检",
+    "Swagger测试",
+    "OpenAPI测试"
+  ],
+  "output_format": "Markdown 测试报告 + JSON 用例集",
+  "priority": "P1",
+  "tools": [
+    "execute_command",
+    "read_file",
+    "write_to_file"
+  ],
+  "dependencies": [],
+  "runtime": "python3（零第三方依赖；安装 requests 可自动加速）",
+  "entrypoint": "scripts/api_batch_tester_tool.py",
+  "self_test": "scripts/self_test.py",
+  "real_objects": "OpenAPI 3.x / Swagger 2.0 文档（本地文件或 URL）、简易接口清单",
+  "deliverables": "测试报告（Markdown）、用例集与结果（JSON）",
+  "need_external_search": "否",
+  "license": "MIT"
+}
